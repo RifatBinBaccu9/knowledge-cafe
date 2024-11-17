@@ -8,11 +8,11 @@ const Blogs = () => {
     useEffect(()=>{
         fetch('cafe.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setCafe(data))
     },[])
     return (
-        <div>
-            
+        <div className="w-[60%]">
+            <h1>hello: {cafe.length}</h1>
         </div>
     );
 };
